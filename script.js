@@ -2,6 +2,7 @@ Start = document.getElementById('startButton')
 Start.addEventListener('click', (e => {
     e.preventDefault();
     sequencer();
+    Start .disabled = true
 }))
 phonkKit = [
     'sounds/phonk_hat.wav',
@@ -70,14 +71,12 @@ function sequencer() {
 
         if (document.getElementById("light"+lightNum) == currentLight) {
             selectedLight.checked = true;
-            
-            
-
         }
-
-
         index++;
-        
     }
 }
 Tone.Transport.bpm.value = 130;
+
+startButton = document.querySelector('#startButton')
+
+console.log(startButton)

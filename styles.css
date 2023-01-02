@@ -1,29 +1,28 @@
 body {
-    background: radial-gradient(#321b10, #050826);
+    background: rgb(192, 192, 192);
+    font-family: 'Helvetica 25 UltraLight', sans-serif;
 }
 
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
     text-align: center;
     margin: auto;
     margin-bottom: 5vh;
-    color: white
+    color: rgb(0, 0, 0)
+    
 }
 
 h2 {
     display: table-row;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(99, 99, 99);
+    color: rgb(66, 66, 66);
     grid-area: 'header';
     margin: auto;
-
-
+    font-weight: 300;
 }
 
-
+/*adding media recognition to resize items here */
 .blocks {
-    background: linear-gradient(90deg, rgb(231, 232, 255), rgb(200, 200, 200), 
-    rgb(230, 230, 230), rgb(145, 145, 145));
+background-color: rgb(177, 176, 176);
     display: grid;
     grid-template-areas:
         'desc lights'
@@ -36,7 +35,8 @@ h2 {
     margin-right: 10vw;
     padding-top: 5vh;
     padding-bottom: 15vh;
-    border: 8px double black;
+    border: 2px solid rgb(84, 84, 84);
+    border-radius: 8px;
     position: absolute
 }
 
@@ -56,18 +56,31 @@ h2 {
     grid-area: 'desc';
     margin-right: 0vw;
     border: auto;
-    width: 10vw
+    width: 10vw;
 }
 
 .buttons {
-    grid-area: 'buttons';
     margin: auto;
-    align-items: right;
-    margin-left: 10vw;
+    align-items: left;
+    grid-area: 'desc';
+
 }
 #startButton {
-    background-color: rgb(131, 213, 131);
+    background-color: #91ca93;
+    color: rgb(255, 255, 255); 
+    font-size: 24px;
+    border-radius: 10px;
+    border: solid rgb(0, 0, 0) 2px; 
+    grid-area: 'desc';
 }
+#startButton:active {
+    background-color: #569a59;
+    color: rgb(193, 193, 193); 
+    font-size: 24px;
+    border-radius: 10px;
+    border: solid rgb(76, 76, 76) 2px; 
+}
+
 #stopButton {
     color: white;
     background-color: rgb(50, 50, 50);
@@ -107,18 +120,18 @@ input:before {
     right: -5px;
     bottom: -8px;
     z-index: -1;
-    background: radial-gradient(rgb(255, 188, 143), rgb(234, 191, 191));
+    background: rgb(216, 222, 222);
     background-size: 400px;
     transition: 0.2;
     border-top: 6px;
     border-bottom: 6px;
     margin: 1px;
-    border-right: solid rgb(206, 114, 114) 1px;
-    border-bottom: solid rgb(206, 114, 114) 1px;
+    border-right: solid rgb(60, 60, 60) 1px;
+    border-bottom: solid rgb(47, 47, 47) 1px;
 }
 
 input:checked:before {
-    background: radial-gradient(rgb(255, 194, 194), rgb(255, 52, 16));
+background: rgb(211, 122, 77);
     background-size: 400px;
     cursor: pointer;
     transform: translate(0%, 0%);
@@ -127,7 +140,6 @@ input:checked:before {
     border-left: solid rgb(106, 39, 39) 1.5px;
 }
 .light:before {
-    
     content: "";
     position: absolute;
     top: -2.5px;
@@ -135,18 +147,16 @@ input:checked:before {
     right: -2.5px;
     bottom: -2.5px;
     z-index: -1;
-    background: radial-gradient(rgb(255, 255, 255), rgb(255, 222, 222));
+    background: aliceblue ;
     border-radius: 10px;
     border: solid black 0.5px;
     background-size: 50px;
     transition: 0.1s;
-
     margin: 1px
 }
 
 .light:checked:before {
-    background: radial-gradient(360deg, rgb(255, 255, 255), rgb(255, 38, 0));
-    background-size: 10px;
+background: rgb(255, 170, 0);    background-size: 10px;
     transform: translate(0%, 0%);
     transition: 0.1s;
     border: solid black 0.5px;
