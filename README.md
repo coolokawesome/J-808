@@ -6,3 +6,5 @@ The J-808 is a sequencer that allows you to create and edit the pattern of drum 
 
 Once you have created a drum pattern, you can use the play button to loop your drum pattern, or trigger the drum sounds in real-time!
 
+# What's to come?
+A BPM dial for the user to adjust their timing. Also different sound libraries for the user to choose from.
