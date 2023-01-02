@@ -61,30 +61,74 @@ background-color: rgb(177, 176, 176);
 
 .buttons {
     margin: auto;
-    align-items: left;
+    align-items: left !important;
     grid-area: 'desc';
-
+    justify-content: left;
+        margin: 0;
+        padding: 0;
 }
+/*start button*/
 #startButton {
     background-color: #91ca93;
     color: rgb(255, 255, 255); 
     font-size: 24px;
-    border-radius: 10px;
-    border: solid rgb(0, 0, 0) 2px; 
+    border-radius: 20px;
+    border-right: solid rgb(61, 61, 61) 1px; 
+    border-bottom: solid rgb(61, 61, 61) 1px; 
+    border-top: none;
+    border-left: none; 
     grid-area: 'desc';
+    height:40px;
+    width: 40px;
 }
 #startButton:active {
-    background-color: #569a59;
-    color: rgb(193, 193, 193); 
+    background-color: #94ab95;
+    color: rgb(138, 138, 138); 
     font-size: 24px;
-    border-radius: 10px;
-    border: solid rgb(76, 76, 76) 2px; 
+    border-radius: 20px;
+    border-top: solid rgb(61, 61, 61) 1px; 
+    border-left: solid rgb(61, 61, 61) 1px; 
+    border-bottom: none;
+    border-right: none;
+}
+#startButton:disabled {
+    background-color: #b8d8b9;
+    color: rgb(255, 255, 255); 
+    font-size: 24px;
+    border-radius: 20px;
+    border-top: solid rgb(61, 61, 61) 1px; 
+    border-left: solid rgb(61, 61, 61) 1px; 
+    border-bottom: none;
+    border-right: none;
+    grid-area: 'desc';
 }
 
+/*start button*/
 #stopButton {
-    color: white;
-    background-color: rgb(50, 50, 50);
+    height:40px;
+    width: 40px;
+    background-color: #e6543d;
+    color: rgb(255, 255, 255); 
+    font-size: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    border-right: solid rgb(61, 61, 61) 1px; 
+    border-bottom: solid rgb(61, 61, 61) 1px; 
+    border-top: none;
+    border-left: none; 
+    grid-area: 'desc';
 }
+#stopButton:active {
+    background-color: #c62800;
+    color: rgb(241, 241, 241); 
+    font-size: 24px;
+    border-radius: 50%;
+    border-top: solid rgb(61, 61, 61) 1px; 
+    border-left: solid rgb(61, 61, 61) 1px; 
+    border-bottom: none;
+    border-right: none;
+}
+
 
 input {
     background-size: 400px;

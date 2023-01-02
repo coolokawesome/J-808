@@ -2,7 +2,7 @@ Start = document.getElementById('startButton')
 Start.addEventListener('click', (e => {
     e.preventDefault();
     sequencer();
-    Start .disabled = true
+    Start.disabled = true
 }))
 phonkKit = [
     'sounds/phonk_hat.wav',
