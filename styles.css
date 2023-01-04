@@ -5,11 +5,12 @@ body {
 
 h1 {
     font-weight: 500;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 5vh;
-    color: rgb(0, 0, 0)
-    
+    text-align: left;
+    margin-left: 20vw;
+    margin-bottom: 1vh;
+    color: rgb(0, 0, 0);
+    font-family: 'Helvetica 65 Medium', sans-serif;
+    font-weight: 300;
 }
 
 h2 {
@@ -20,43 +21,101 @@ h2 {
     font-weight: 300;
 }
 
-/*adding media recognition to resize items here */
+
 .blocks {
-background-color: rgb(177, 176, 176);
+    background-color: rgb(160, 160, 160);
     display: grid;
     grid-template-areas:
         'desc lights'
         'desc hat_row'
         'desc snare_row'
         'desc kick_row'
+        'desc bass_row'
+        'desc perc1_row'
+        'desc perc2_row'
         'desc buttons';
-    width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw !important;
+    margin-right: 20vw !important;
+    width: 60vw;
+    align-items: center;
+    margin: auto;
+    justify-content: center !important;
+    padding: 20px;
     padding-top: 5vh;
-    padding-bottom: 15vh;
-    border: 2px solid rgb(84, 84, 84);
+    border: 2px solid rgb(110, 110, 110);
     border-radius: 8px;
     position: absolute
 }
+/*adding media recognition to resize items here */
+@media only screen and (max-width: 990px) {
+    .blocks {
+        background-color: rgb(160, 160, 160);
+        display: grid;
+        grid-template-areas:
+            'desc lights'
+            'desc hat_row'
+            'desc snare_row'
+            'desc kick_row'
+            'desc bass_row'
+            'desc perc1_row'
+            'desc perc2_row'
+            'desc buttons';
+        margin-left: 1vw !important;
+        margin-right: 1vw !important;
+        width: 100vw;
+        align-items: center;
+        margin: auto;
+        justify-content: center !important;
+        padding: 20px;
+        padding-top: 5vh;
+        border: 2px solid rgb(110, 110, 110);
+        border-radius: 8px;
+        position: absolute
+    }
+  }
+
 
 .hat_row {
     grid-area: 'hat_row';
+    margin: 2px;
+    justify-content: space-between;
 }
 
 .snare_row {
     grid-area: 'snare_row';
+    margin: 2px;
+    justify-content: space-between;
 }
 
-.kick {
+.kick_row {
     grid-area: 'kick_row';
+    margin: 2px;
+    justify-content: space-between;
+}
+
+.bass_row {
+    grid-area: 'bass_row';
+    margin: 2px;
+    justify-content: space-between;
+}
+
+.perc1_row {
+    grid-area: 'perc1_row';
+    margin: 2px;
+    justify-content: space-between;
+}
+
+.perc2_row {
+    grid-area: 'perc2_row';
+    margin: 2px;
+    justify-content: space-between;
 }
 
 .desc {
     grid-area: 'desc';
-    margin-right: 0vw;
     border: auto;
-    width: 10vw;
+    margin-right: 10px;
+    
 }
 
 .buttons {
@@ -64,67 +123,71 @@ background-color: rgb(177, 176, 176);
     align-items: left !important;
     grid-area: 'desc';
     justify-content: left;
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 /*start button*/
 #startButton {
-    background-color: #91ca93;
-    color: rgb(255, 255, 255); 
+    background-color: rgb(20, 223, 121);
+    color: rgb(255, 255, 255);
     font-size: 24px;
     border-radius: 20px;
-    border-right: solid rgb(61, 61, 61) 1px; 
-    border-bottom: solid rgb(61, 61, 61) 1px; 
+    border-right: solid rgb(61, 61, 61) 1px;
+    border-bottom: solid rgb(61, 61, 61) 1px;
     border-top: none;
-    border-left: none; 
+    border-left: none;
     grid-area: 'desc';
-    height:40px;
-    width: 40px;
+    height: 40px;
+    width: 80px;
 }
+
 #startButton:active {
-    background-color: #94ab95;
-    color: rgb(138, 138, 138); 
+    background-color: #86dc89;
+    color: rgb(138, 138, 138);
     font-size: 24px;
     border-radius: 20px;
-    border-top: solid rgb(61, 61, 61) 1px; 
-    border-left: solid rgb(61, 61, 61) 1px; 
+    border-top: solid rgb(61, 61, 61) 2px;
+    border-left: solid rgb(61, 61, 61) 2.5px;
     border-bottom: none;
     border-right: none;
 }
+
 #startButton:disabled {
     background-color: #b8d8b9;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     font-size: 24px;
     border-radius: 20px;
-    border-top: solid rgb(61, 61, 61) 1px; 
-    border-left: solid rgb(61, 61, 61) 1px; 
+    border-top: solid rgb(61, 61, 61) 1px;
+    border-left: solid rgb(61, 61, 61) 1px;
     border-bottom: none;
     border-right: none;
     grid-area: 'desc';
 }
 
-/*start button*/
+/*stop button*/
 #stopButton {
-    height:40px;
-    width: 40px;
-    background-color: #e6543d;
-    color: rgb(255, 255, 255); 
+    height: 40px;
+    width: 80px;
+    background-color: #FF5043ff;
+    color: rgb(255, 255, 255);
     font-size: 24px;
-    border-radius: 50%;
+    border-radius: 50px;
+    margin-top: 4px;
     display: inline-block;
-    border-right: solid rgb(61, 61, 61) 1px; 
-    border-bottom: solid rgb(61, 61, 61) 1px; 
+    border-right: solid rgb(61, 61, 61) 1px;
+    border-bottom: solid rgb(61, 61, 61) 1px;
     border-top: none;
-    border-left: none; 
+    border-left: none;
     grid-area: 'desc';
 }
+
 #stopButton:active {
     background-color: #c62800;
-    color: rgb(241, 241, 241); 
+    color: rgb(241, 241, 241);
     font-size: 24px;
-    border-radius: 50%;
-    border-top: solid rgb(61, 61, 61) 1px; 
-    border-left: solid rgb(61, 61, 61) 1px; 
+    border-top: solid rgb(61, 61, 61) 1px;
+    border-left: solid rgb(61, 61, 61) 1px;
     border-bottom: none;
     border-right: none;
 }
@@ -136,12 +199,12 @@ input {
     transform: translate(0%, 0%);
     transition: 0.5s;
     margin-bottom: 12px;
-    
 }
+
 .light {
-margin: 8px;
-width: 5px;
-height: 5px;
+    margin: 8px;
+    width: 5px;
+    height: 5px;
 }
 
 input:nth-child(4) {
@@ -159,7 +222,7 @@ input:nth-child(12) {
 input:before {
     content: "";
     position: absolute;
-    top: -8px;
+    top: -10px;
     left: -5px;
     right: -5px;
     bottom: -8px;
@@ -169,13 +232,14 @@ input:before {
     transition: 0.2;
     border-top: 6px;
     border-bottom: 6px;
-    margin: 1px;
+    margin: 1.5px;
     border-right: solid rgb(60, 60, 60) 1px;
     border-bottom: solid rgb(47, 47, 47) 1px;
 }
 
+
 input:checked:before {
-background: rgb(211, 122, 77);
+    background: #FFB601ff;
     background-size: 400px;
     cursor: pointer;
     transform: translate(0%, 0%);
@@ -183,6 +247,7 @@ background: rgb(211, 122, 77);
     border-top: solid rgb(123, 31, 31) 1.5px;
     border-left: solid rgb(106, 39, 39) 1.5px;
 }
+
 .light:before {
     content: "";
     position: absolute;
@@ -191,7 +256,7 @@ background: rgb(211, 122, 77);
     right: -2.5px;
     bottom: -2.5px;
     z-index: -1;
-    background: aliceblue ;
+    background: aliceblue;
     border-radius: 10px;
     border: solid black 0.5px;
     background-size: 50px;
@@ -200,11 +265,60 @@ background: rgb(211, 122, 77);
 }
 
 .light:checked:before {
-background: rgb(255, 170, 0);    background-size: 10px;
+    background: #FFB601ff;
+    background-size: 10px;
     transform: translate(0%, 0%);
     transition: 0.1s;
     border: solid black 0.5px;
 }
+
 .light_row {
     margin-bottom: 8px;
 }
+
+.slider:before {
+
+    top: -1px;
+    bottom: -1px;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    background-size: 400px;
+    transition: 0.2;
+    border-top: 2px;
+    border-bottom: 2px;
+    margin: 1.5px;
+    border-right: solid rgb(60, 60, 60) 1px;
+    border-bottom: solid rgb(47, 47, 47) 1px;}
+
+    /*slider */
+    .slider {
+        -webkit-appearance: none;
+        width: 20%;
+        height: 6px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      .slider:hover {
+        opacity: 1;
+      }
+      
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background: #000000;
+        cursor: pointer;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #04AA6D;
+        cursor: pointer;
+      }
