@@ -3,6 +3,7 @@ Start.addEventListener('click', (e => {
     e.preventDefault();
     sequencer();
     Start.disabled = true
+    BPMTextValue = $('#BPMTextValue').text('130')
 }))
 //sound kit 1
 kit = [
@@ -13,10 +14,6 @@ kit = [
     'sounds/phonk_perc1.wav',
     'sounds/phonk_perc2.wav'
 ]
-
-
-
-
 
 function sequencer() {
     //declaring the sound kit variables
@@ -103,4 +100,5 @@ function sequencer() {
 }
 //bpm of drum machine
 Tone.Transport.bpm.value = 130;
+
 

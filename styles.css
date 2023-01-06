@@ -20,11 +20,7 @@ h2 {
     margin: auto;
     font-weight: 300;
 }
-h2, .desc {
-    text-align: left;
-    margin: 4px
-    margin-bottom: 3px;
-}
+
 
 
 .blocks {
@@ -331,4 +327,19 @@ input:checked:before {
         height: 25px;
         background: #04AA6D;
         cursor: pointer;
+      }
+
+      .BPMTextValue {
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid rgb(129, 129, 129);
+        border-top: 2px solid rgb(139, 139, 139);
+        border-radius: 20px;
+        background-color: rgb(63, 63, 63);
+        color: red;
+        text-align: center;
+        font-size: larger;
+        font-family: 'DS-Digital', sans-serif;
+        ;
+
       }

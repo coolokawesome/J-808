@@ -10,7 +10,10 @@
   <!-- drum kit script -->
     <script src="script.js" async ></script>
     <!-- font family-->
-    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" 
+    rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+                
     <!-- bootstrap 5-->
 
 </head>
@@ -159,14 +162,16 @@
                 <input type="checkbox">
             </div>
             <div class="desc">
-                <div><h2>BPM
-                </h2>
-                <p id='BPMTextValue'>130</p>
-            </div>
+                <div>
+                    <h2>BPM</h2>                
+                    <p class="BPMTextValue" id='BPMTextValue'>---</p>
+
+                </div>
             </div>
             <div class="buttons">
                 
                 <input id='BPM' class="slider" type="range" min="80" max="200" value="130">
+                
             </div>
             
             <div class="desc"></div>
@@ -176,6 +181,9 @@
 
             </div>
         </div>
+    </div>
+    <div>
+        <p style="justify-content: center; text-align: center; margin-top: 90vh">Syrus Samson, 2023</p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"
     integrity="sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ=="
