@@ -340,6 +340,7 @@ input:checked:before {
         text-align: center;
         font-size: larger;
         font-family: 'DS-Digital', sans-serif;
-        ;
+        margin: none !important;
+        margin-top: -1px !important;
 
       }
