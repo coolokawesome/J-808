@@ -19,6 +19,7 @@ h2 {
     grid-area: 'header';
     margin: auto;
     font-weight: 300;
+    text-align: right  ;
 }
 
 
@@ -345,4 +346,6 @@ input:checked:before {
         padding-right: 25px;
         justify-content: right;
         display:inline-flex;
+        width: 82.23 !important;
+        overflow-x: hidden;
     }
