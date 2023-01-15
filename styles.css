@@ -78,10 +78,7 @@ input[type='checkbox']{
 
   .light {
     background-color: rgb(255, 246, 233) !important;
-    border-top: 1px solid rgb(36, 38, 39) !important;
-    border-left: 1px solid rgb(36, 38, 39) !important;
-    border-bottom: 1px solid rgb(225, 225, 225);
-    border-right: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(36, 38, 39) !important;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
