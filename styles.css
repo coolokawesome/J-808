@@ -1,351 +1,130 @@
-body {
-    background: rgb(192, 192, 192);
-    font-family: 'Helvetica 25 UltraLight', sans-serif;
-}
-
 h1 {
-    font-weight: 500;
-    text-align: left;
-    margin-left: 20vw;
-    margin-bottom: 1vh;
-    color: rgb(0, 0, 0);
-    font-family: 'Helvetica 65 Medium', sans-serif;
-    font-weight: 300;
+    background-color: rgb(243, 240, 235);
+    font-weight: 600 !important;
+    color: rgb(31, 31, 31);
+    margin-bottom: 0px !important;
+}
+.J {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.a {
+background-color: yellow !important;
+padding-right: 10px;
+}
+.b {
+background-color: orange;
+padding-right: 10px;
+}
+.c {
+background-color: rgb(255, 95, 2);
+padding-right: 10px;
+}
+#heading {
+    background-color: rgb(36, 36, 36);
+    padding-bottom: 0px;
 }
 
 h2 {
-    display: table-row;
-    color: rgb(66, 66, 66);
-    grid-area: 'header';
-    margin: auto;
-    font-weight: 300;
-    text-align: right  ;
+   font-weight: 200 !important;
+}
+.inv {
+    color: rgba(240, 248, 255, 0);
 }
 
-
-
-.blocks {
-    background-color: rgb(160, 160, 160);
-    display: grid;
-    grid-template-areas:
-        'desc lights'
-        'desc hat_row'
-        'desc snare_row'
-        'desc kick_row'
-        'desc bass_row'
-        'desc perc1_row'
-        'desc perc2_row'
-        'desc buttons ';
-    align-items: center;
-    margin-left: 25vw;
-    width: 49%;
-    justify-content: center !important;
-    padding: 20px;
-    padding-top: 5vh;
-    border: 2px solid rgb(110, 110, 110);
-    border-radius: 8px;
-    position: absolute;
-    text-align: left !important
+.main {
+    background-color: rgb(243, 240, 235);
+    border-radius: 15px !important;
+    border: 5px solid rgb(50, 50, 50);
 }
-/*adding media recognition to resize items here */
-@media only screen and (max-width: 990px) {
-    .blocks {
-        background-color: rgb(160, 160, 160);
-        display: grid;
-        grid-template-areas:
-            'desc lights'
-            'desc hat_row'
-            'desc snare_row'
-            'desc kick_row'
-            'desc bass_row'
-            'desc perc1_row'
-            'desc perc2_row'
-            'desc buttons';
-        margin-left: 1vw !important;
-        margin-right: 1vw !important;
-        width: 100vw;
-        align-items: center;
-        margin: auto;
-        justify-content: center !important;
-        padding: 20px;
-        padding-top: 5vh;
-        border: 2px solid rgb(110, 110, 110);
-        border-radius: 8px;
-        position: absolute;
 
-        
-
-    }
+input[type='checkbox']{
+    width: 3vw !important;
+    height: 4vw;
+    margin: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance:none;
+    /*depth styling */
+    border-right: 1px solid rgb(36, 38, 39);
+    border-bottom: 1px solid rgb(36, 38, 39);
+    border-top: 1px solid rgb(225, 225, 225);
+    border-left: 1px solid rgb(255, 255, 255);
+    box-shadow: none;
+    font-size: 2em;
+    background-color: rgb(200, 200, 200);
+    transition-duration: 0.1s;
   }
 
-
-.hat_row {
-    grid-area: 'hat_row';
+  input[type='checkbox']:checked {
+    width: 3vw !important;
+    height: 4vw;
     margin: 2px;
-    justify-content: space-between;
-}
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance:none;
+    /*depth styling */
+    border-top: 1px solid rgb(36, 38, 39);
+    border-left: 1px solid rgb(36, 38, 39);
+    border-bottom: 1px solid rgba(225, 225, 225, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: none;
+    font-size: 2em;
+    background-color: rgb(255, 95, 2);
+    transition-duration: 0.1s;
+  }
 
-.snare_row {
-    grid-area: 'snare_row';
-    margin: 2px;
-    justify-content: space-between;
-}
+  .light {
+    background-color: rgb(255, 246, 233) !important;
+    border-top: 1px solid rgb(36, 38, 39) !important;
+    border-left: 1px solid rgb(36, 38, 39) !important;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    border-right: 1px solid rgb(255, 255, 255);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    transition-duration: 0.15s !important;
+    width: 50% !important;
+  }
 
-.kick_row {
-    grid-area: 'kick_row';
-    margin: 2px;
-    justify-content: space-between;
-}
-
-.bass_row {
-    grid-area: 'bass_row';
-    margin: 2px;
-    justify-content: space-between;
-}
-
-.perc1_row {
-    grid-area: 'perc1_row';
-    margin: 2px;
-    justify-content: space-between;
-}
-
-.perc2_row {
-    grid-area: 'perc2_row';
-    margin: 2px;
-    justify-content: space-between;
-}
-
-.desc {
-    grid-area: 'desc';
-    border: auto;
-    margin-right: 10px;
-    
-}
-
-.buttons {
-    margin: auto;
-    align-items: left !important;
-    grid-area: 'desc';
-    justify-content: left;
-    margin: 0;
-    padding: 0;
-
-}
-
-/*start button*/
+  .light:checked {
+    background-color: rgb(246, 137, 54) !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+  }
+  body {
+    background-color: rgb(255, 213, 86) !important;
+  }
 #startButton {
-    background-color: rgb(20, 223, 121);
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border-radius: 20px;
-    border-right: solid rgb(61, 61, 61) 1px;
-    border-bottom: solid rgb(61, 61, 61) 1px;
-    border-top: none;
-    border-left: none;
-    grid-area: 'desc';
-    height: 40px;
-    width: 80px;
+    background-color: rgb(156, 215, 78);
+    color: white;
+    width: 15%;
 }
-
 #startButton:active {
-    background-color: #86dc89;
-    color: rgb(138, 138, 138);
-    font-size: 24px;
-    border-radius: 20px;
-    border-top: solid rgb(61, 61, 61) 2px;
-    border-left: solid rgb(61, 61, 61) 2.5px;
-    border-bottom: none;
-    border-right: none;
+    background-color: rgb(70, 174, 28);
+    color: rgb(200, 200, 200);
 }
-
 #startButton:disabled {
-    background-color: #b8d8b9;
+    background-color: rgb(199, 234, 185);
     color: rgb(255, 255, 255);
-    font-size: 24px;
-    border-radius: 20px;
-    border-top: solid rgb(61, 61, 61) 1px;
-    border-left: solid rgb(61, 61, 61) 1px;
-    border-bottom: none;
-    border-right: none;
-    grid-area: 'desc';
 }
-
-/*stop button*/
 #stopButton {
-    height: 40px;
-    width: 80px;
-    background-color: #FF5043ff;
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border-radius: 50px;
-    margin-top: 4px;
-    display: inline-block;
-    border-right: solid rgb(61, 61, 61) 1px;
-    border-bottom: solid rgb(61, 61, 61) 1px;
-    border-top: none;
-    border-left: none;
-    grid-area: 'desc';
+    background-color: rgb(236, 122, 35);
+    color: white;
+    width: 15%;
 }
-
 #stopButton:active {
-    background-color: #c62800;
-    color: rgb(241, 241, 241);
-    font-size: 24px;
-    border-top: solid rgb(61, 61, 61) 1px;
-    border-left: solid rgb(61, 61, 61) 1px;
-    border-bottom: none;
-    border-right: none;
+    background-color: rgb(255, 111, 0);
+    color: rgb(255, 255, 255);
 }
-
-
-input {
-    background-size: 400px;
-    cursor: pointer;
-    transform: translate(0%, 0%);
-    transition: 0.5s;
-    margin-bottom: 12px;
+#stopButton:disabled {
+    background-color: rgb(209, 162, 126);
+    color: rgb(219, 219, 219);
 }
-
-.light {
-    margin: 8px;
-    width: 5px;
-    height: 5px;
-}
-
-input:nth-child(4) {
-    margin-right: 8px;
-}
-
-input:nth-child(8) {
-    margin-right: 8px;
-}
-
-input:nth-child(12) {
-    margin-right: 8px;
-}
-
-input:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -5px;
-    right: -5px;
-    bottom: -8px;
-    z-index: -1;
-    background: rgb(216, 222, 222);
-    background-size: 400px;
-    transition: 0.2;
-    border-top: 6px;
-    border-bottom: 6px;
-    margin: 1.5px;
-    border-right: solid rgb(60, 60, 60) 1px;
-    border-bottom: solid rgb(47, 47, 47) 1px;
-}
-
-
-input:checked:before {
-    background: #FFB601ff;
-    background-size: 400px;
-    cursor: pointer;
-    transform: translate(0%, 0%);
-    transition: 0.1s;
-    border-top: solid rgb(123, 31, 31) 1.5px;
-    border-left: solid rgb(106, 39, 39) 1.5px;
-}
-
-.light:before {
-    content: "";
-    position: absolute;
-    top: -2.5px;
-    left: -2.5px;
-    right: -2.5px;
-    bottom: -2.5px;
-    z-index: -1;
-    background: aliceblue;
-    border-radius: 10px;
-    border: solid black 0.5px;
-    background-size: 50px;
-    transition: 0.1s;
-    margin: 1px
-}
-
-.light:checked:before {
-    background: #FFB601ff;
-    background-size: 10px;
-    transform: translate(0%, 0%);
-    transition: 0.1s;
-    border: solid black 0.5px;
-}
-
-.light_row {
-    margin-bottom: 8px;
-}
-
-.slider:before {
-
-    top: -1px;
-    bottom: -1px;
-    z-index: -1;
-    background: rgb(255, 255, 255);
-    background-size: 400px;
-    transition: 0.2;
-    border-top: 2px;
-    border-bottom: 2px;
-    margin: 1.5px;
-    border-right: solid rgb(60, 60, 60) 1px;
-    border-bottom: solid rgb(47, 47, 47) 1px;}
-
-    /*slider */
-    .slider {
-        -webkit-appearance: none;
-        width: auto;
-        height: 6px;
-        background: #d3d3d3;
-        outline: none;
-        opacity: 0.7;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-      }
-      
-      .slider:hover {
-        opacity: 1;
-      }
-      
-      .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 18px;
-        height: 10px;
-        border-radius: 20px;
-        background: #000000;
-        cursor: pointer;
-      }
-      
-      .slider::-moz-range-thumb {
-        appearance: none;
-        width: 18px;
-        height: 10px;
-        border-radius: 20px;
-        background: #000000;
-        cursor: pointer;
-      }
-
-      .BPMTextValue {
-        border-bottom: 2px solid black;
-        border-right: 2px solid black;
-        border-left: 2px solid rgb(129, 129, 129);
-        border-top: 2px solid rgb(139, 139, 139);
-        border-radius: 20px;
-        background-color: rgb(63, 63, 63);
-        color: red;
-        text-align: center;
-        font-size: larger;
-        font-family: 'DS-Digital', sans-serif;
-        margin: none !important;
-        padding-left: 25px;
-        padding-right: 25px;
-        justify-content: right;
-        display:inline-flex;
-        width: 82.23 !important;
-        overflow-x: hidden;
-    }
