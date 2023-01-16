@@ -78,7 +78,10 @@ input[type='checkbox']{
 
   .light {
     background-color: rgb(255, 246, 233) !important;
-    border: 1px solid rgb(36, 38, 39) !important;
+    border-right: 1px solid rgb(36, 38, 39) !important;
+    border-bottom: 1px solid rgb(36, 38, 39) !important;
+
+
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -86,15 +89,18 @@ input[type='checkbox']{
     border-radius: 50%;
     transition-duration: 0.15s !important;
     width: 50% !important;
+    transition-duration: 0.5s !important;
+
   }
 
   .light:checked {
-    background-color: rgb(246, 137, 54) !important;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,82,82,1) 85%, rgba(233,148,148,1) 98%);
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
     border-radius: 50%;
+    transition-duration: 0.8s !important;
   }
   body {
     background-color: rgb(255, 213, 86) !important;
