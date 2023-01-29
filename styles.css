@@ -47,14 +47,17 @@ input[type='checkbox']{
     -o-appearance: none;
     appearance:none;
     /*depth styling */
-    border-right: 1px solid rgb(36, 38, 39);
-    border-bottom: 1px solid rgb(36, 38, 39);
+    border-right: 2px solid rgba(36, 38, 39, 0.527);
+    border-bottom: 2px solid rgb(36, 38, 39);
     border-top: 1px solid rgb(225, 225, 225);
     border-left: 1px solid rgb(255, 255, 255);
     box-shadow: none;
     font-size: 2em;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(172, 172, 172);
     transition-duration: 0.1s;
+  }
+  input[type='checkbox']:nth-child(2n) {
+    background-color: rgb(199, 199, 199);
   }
 
   input[type='checkbox']:checked {
@@ -66,8 +69,8 @@ input[type='checkbox']{
     -o-appearance: none;
     appearance:none;
     /*depth styling */
-    border-top: 1px solid rgb(36, 38, 39);
-    border-left: 1px solid rgb(36, 38, 39);
+    border-top: 2px solid rgb(36, 38, 39);
+    border-left: 3px solid rgb(36, 38, 39);
     border-bottom: 1px solid rgba(225, 225, 225, 0);
     border-right: 1px solid rgba(255, 255, 255, 0);
     box-shadow: none;
@@ -78,23 +81,22 @@ input[type='checkbox']{
 
   .light {
     background-color: rgb(255, 246, 233) !important;
-    border-right: 1px solid rgb(36, 38, 39) !important;
-    border-bottom: 1px solid rgb(36, 38, 39) !important;
-
-
+    border-right: 3px solid rgba(150, 116, 89, 0.192) !important;
+    border-bottom: 3px solid rgba(201, 187, 170, 0.253) !important;
+    border-left: 3px solid rgba(255, 255, 255, 0.158) !important;
+    border-top: 3px solid rgba(255, 255, 255, 0.308) !important;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
     border-radius: 50%;
-    transition-duration: 0.15s !important;
-    width: 50% !important;
+    width: 10px !important;
     transition-duration: 0.5s !important;
 
   }
 
   .light:checked {
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,82,82,1) 85%, rgba(233,148,148,1) 98%);
+    background: radial-gradient(circle, rgb(231, 219, 219) 0%, rgba(255,82,82,1) 85%, rgba(233,148,148,1) 98%);
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -103,7 +105,7 @@ input[type='checkbox']{
     transition-duration: 0.8s !important;
   }
   body {
-    background-color: rgb(255, 213, 86) !important;
+    background-color: rgb(230, 182, 78) !important;
   }
 #startButton {
     background-color: rgb(156, 215, 78);
