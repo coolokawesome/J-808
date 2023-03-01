@@ -1,6 +1,6 @@
 h1 {
     background-color: rgb(243, 240, 235);
-    font-weight: 600 !important;
+    font-weight: 800 !important;
     color: rgb(31, 31, 31);
     margin-bottom: 0px !important;
 }
@@ -8,22 +8,8 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
 }
-.a {
-background-color: yellow !important;
-padding-right: 10px;
-}
-.b {
-background-color: orange;
-padding-right: 10px;
-}
-.c {
-background-color: rgb(255, 95, 2);
-padding-right: 10px;
-}
-#heading {
-    background-color: rgb(36, 36, 36);
-    padding-bottom: 0px;
-}
+
+
 
 h2 {
    font-weight: 200 !important;
@@ -33,9 +19,9 @@ h2 {
 }
 
 .main {
-    background-color: rgb(243, 240, 235);
+    background-color: rgb(247, 247, 247);
     border-radius: 15px !important;
-    border: 5px solid rgb(50, 50, 50);
+    border: 5px solid rgb(112, 112, 112);
 }
 
 input[type='checkbox']{
@@ -53,11 +39,12 @@ input[type='checkbox']{
     border-left: 1px solid rgb(255, 255, 255);
     box-shadow: none;
     font-size: 2em;
-    background-color: rgb(172, 172, 172);
+    
+    background-color: #c1c1c1;
     transition-duration: 0.1s;
   }
   input[type='checkbox']:nth-child(2n) {
-    background-color: rgb(199, 199, 199);
+    background-color: #e1e1e1;
   }
 
   input[type='checkbox']:checked {
@@ -75,12 +62,12 @@ input[type='checkbox']{
     border-right: 1px solid rgba(255, 255, 255, 0);
     box-shadow: none;
     font-size: 2em;
-    background-color: rgb(255, 95, 2);
+    background-color: #5d90d8;
     transition-duration: 0.1s;
   }
 
   .light {
-    background-color: rgb(255, 246, 233) !important;
+    background-color: rgb(255, 247, 242) !important;
     border-right: 3px solid rgba(150, 116, 89, 0.192) !important;
     border-bottom: 3px solid rgba(201, 187, 170, 0.253) !important;
     border-left: 3px solid rgba(255, 255, 255, 0.158) !important;
@@ -96,19 +83,19 @@ input[type='checkbox']{
   }
 
   .light:checked {
-    background: radial-gradient(circle, rgb(231, 219, 219) 0%, rgba(255,82,82,1) 85%, rgba(233,148,148,1) 98%);
+    background: #e63946 !important;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
     border-radius: 50%;
-    transition-duration: 0.8s !important;
+    transition-duration: 0.2s !important;
   }
   body {
-    background-color: rgb(230, 182, 78) !important;
+    background-color: rgb(255, 255, 255) !important;
   }
 #startButton {
-    background-color: rgb(156, 215, 78);
+    background-color: rgb(145, 208, 96);
     color: white;
     width: 15%;
 }
@@ -121,7 +108,7 @@ input[type='checkbox']{
     color: rgb(255, 255, 255);
 }
 #stopButton {
-    background-color: rgb(236, 122, 35);
+    background-color: rgb(251, 118, 88);
     color: white;
     width: 15%;
 }
